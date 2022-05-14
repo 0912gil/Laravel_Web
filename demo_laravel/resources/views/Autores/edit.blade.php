@@ -8,7 +8,7 @@
 </div>
 <div class="row">
     <div class=" col-md-7">
-        <form role="form" action="{{ route('autores.update',$autor->id) }}" method="POST">
+        <form role="form" action="{{route('autores.update',$autor->id)}}" method="POST">
             @csrf
             <input type="hidden" name="id" value="{{ $autor->id }}"/>
             <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span>Campos requeridos</strong></div>

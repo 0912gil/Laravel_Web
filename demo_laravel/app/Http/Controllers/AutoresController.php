@@ -82,7 +82,7 @@ class AutoresController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'codigo_Autor'=>['required','regex:/^AUTI[0-9]{3}$/'],
+            'codigo_Autor'=>['required','regex:/^AUT[0-9]{3}$/'],
             'nombre_Autor'=>'required',
             'nacionalidad'=>'required'
         ]);
